@@ -1,7 +1,9 @@
 # Koopman-identification
 Main and dual identification methods in the Koopman operator framework.
 
-Main functions: "lifting_ident_main" and "lifting_ident_dual"
+Main functions:
+- lifting_ident_main (main method)
+- lifting_ident_dual (dual method)
 
 Four examples:
 - Lorenz system (main method)
