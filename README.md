@@ -5,7 +5,7 @@ Main functions:
 - lifting_ident_main (main method)
 - lifting_ident_dual (dual method)
 
-Four examples:
+Examples:
 - Lorenz system (main method)
 - Duffing system (main method with input)
 - Toggle swicth system (main method with non polynomial vector field)
