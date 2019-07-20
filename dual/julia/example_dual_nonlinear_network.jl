@@ -35,7 +35,7 @@ for dim = 1 : n, k = 1 : size(F,1)
 end
 end
 
-F_coeff = Array{Array{Float64}}(n)
+F_coeff = Vector{Array{Float64, 2}}(undef, n)
 for dim = 1 : n
 
     F_coeff[dim]=[zeros(size(F,1),n) F[:,5,dim]]
@@ -116,7 +116,7 @@ for j = 1 : nb_samples
 end
 
 RMSE = norm(F_samples[:]-F_exact[:])/sqrt(n*nb_samples)
-NRMSE = RMSE/mean(abs(F_exact[:])
+NRMSE = RMSE/mean(abs(F_exact[:]))
 
 # figure
 using Plots
