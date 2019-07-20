@@ -116,7 +116,7 @@ for j = 1 : nb_samples
 end
 
 RMSE = norm(F_samples[:]-F_exact[:])/sqrt(n*nb_samples)
-NRMSE = RMSE/mean(abs(F_exact[:]))
+NRMSE = RMSE/mean(abs.(F_exact[:]))
 
 # figure
 using Plots
